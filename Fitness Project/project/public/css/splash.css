@@ -1,0 +1,110 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	font-size: larger;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+
+	flex-basis:300px;
+	background-color:F2F2F2;
+}
+
+header > h1 {
+	text-align:center;
+	padding:15px;
+  font-size:25px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow:0;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #333333;
+	flex-basis:420px;
+}
+
+main > h2 {
+	color: #7CDDCD;
+	font-weight: bold;
+  text-align:center;
+  font-size: 3vh;
+}
+
+#login > p {
+	color: #F0F0F0;
+}
+
+#login{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+#login a{
+	display:flex;
+	justify-content:center;
+	margin-bottom:10%;
+}
+
+img {
+	width: 50%;	
+}
+
+main > a {
+	display:flex;
+	justify-content:center;
+}
+
+#tractivity-logo {
+  position: relative;
+  top:50px;
+}
+
+#login {
+  position: relative;
+  bottom: 50px;
+}
+
+@media screen and (min-width: 452px){
+  header > h1{
+    width:420px;
+  }
+}
+
+@media screen and (min-width: 780px){
+	body{
+		flex-direction:row;
+	}
+	header{
+		height:100vh;
+		flex-basis:60%;
+	}
+  header > h1{
+    text-align:left;
+    width:450px;
+  }
+	main{
+		height:100vh;
+		flex-basis:40%;
+	}
+  #tractivity-logo {
+  position: relative;
+  top: 100px;
+}
+
+#login {
+  position: relative;
+  bottom: 100px;
+}
+}
